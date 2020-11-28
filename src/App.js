@@ -1,11 +1,15 @@
 import React from 'react';
 import './App.css';
+import Parent from './Parent';
+import StateProwider from './StateProwider';
 
 function App() {
   return (
+    <StateProwider.Provider value={10}>
     <div className="App">
-     <h1>PAKISTAN ZENDABAAD 🏳️ ❤️ </h1>
+        <Parent/>
     </div>
+    </StateProwider.Provider>
   );
 }
 
